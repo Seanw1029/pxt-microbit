@@ -50,28 +50,24 @@ input.onGesture(Gesture.Shake, () =>  {
 ```
 
 ## Challenge 2
-
-Now have the magic 8 ball respond "Try again" if **randomNumber** is 3.
-
-
-```blocks
-basic.showString("ASK A QUESTION")
-basic.showNumber(8)
-input.onGesture(Gesture.Shake, () => {
+input.onGesture(Gesture.Shake, function () {
     basic.clearScreen()
-    let randomNumber = randint(0, 4)
-    if (randomNumber == 3) {
-        basic.showString("TRY AGAIN")
-    } else if (randomNumber == 2) {
-        basic.showString("YES")
-    } else if (randomNumber == 1) {
-        basic.showString("NO")
+    randomnumber = randint(0, 4)
+    if (randomnumber == 3) {
+        basic.showString("try again")
+    } else if (randomnumber == 2) {
+        basic.showString("yes")
+    } else if (randomnumber == 1) {
+        basic.showString("no")
     } else {
-        basic.showString("I DON'T KNOW")
+        basic.showString("idk")
     }
     basic.showNumber(8)
 })
-```
+let randomnumber = 0
+basic.showString("ASK A QUESTION")
+basic.showNumber(8)
+
 
 ## Challenge 3
 
